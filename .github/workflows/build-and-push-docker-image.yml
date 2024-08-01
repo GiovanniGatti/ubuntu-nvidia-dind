@@ -28,7 +28,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          file: ubuntu-focal.Dockerfile
+          file: Dockerfile
           platforms: linux/amd64,linux/arm64
           tags: >
             gattipg/ubuntu-nvidia-dind:${{ env.CURRENT_VERSION }},
